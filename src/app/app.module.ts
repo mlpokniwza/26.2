@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { HomeModule } from './home/home.module';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PanelComponent } from './panel/panel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -49,10 +51,18 @@ const routes: Routes = [
     ProductListComponent,
     HomeComponent,
     LoginComponent ,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PanelComponent
 
   ],
-  imports: [BrowserModule, FormsModule, CatalogModule, HomeModule , RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    CatalogModule,
+    HomeModule ,
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
+  ],
   providers: [BackendService],
   bootstrap: [AppComponent]
 })
