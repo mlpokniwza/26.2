@@ -8,7 +8,7 @@ constructor() {}
 getProducts(): Product[] {
     [
     {
-    name: 'สมโอ',
+    name: 'ส้มโอ',
     price: 111
     },
     {
@@ -16,7 +16,7 @@ getProducts(): Product[] {
     price: 222
     },
     {
-    name: 'มะพร่าวนํ้าหอม',
+    name: 'มะพร้าวนํ้าหอม',
     price: 333
     }
     ];
