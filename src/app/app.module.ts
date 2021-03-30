@@ -4,6 +4,10 @@ import { BackendService } from './backend.service';
 import { AppComponent } from './app.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { FormsModule } from '@angular/forms';
+import { CatalogModule } from './catalog/catalog.module';
+import { HomeModule } from './home/home.module';
+
 
 @NgModule({
   declarations: [
@@ -11,7 +15,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     ProductItemComponent,
     ProductListComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule, CatalogModule, HomeModule],
   providers: [BackendService],
   bootstrap: [AppComponent]
 })
